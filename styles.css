@@ -19,6 +19,20 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+.navbar-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+}
+
+.navbar-image img {
+    width: 25px;
+    height: 25px;
+
+}
+
 .hero-section {
     display: flex;
     justify-content: center;
