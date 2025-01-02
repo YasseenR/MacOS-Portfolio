@@ -1,42 +1,125 @@
+@media (max-width: 500px) {
+    .desktop {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on very small screens */
+    }
+}
+
+
 body {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
 
 .landing {
     width: 100%;
     height: 100vh;
-    background-image: url('hero.jpg');
+    background-image: url('images/hero.jpg');
+    background-size: cover;  /* Ensures the entire image fits inside the div */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    background-position: center center;
 }
 
 .navbar {
+    position: fixed;
     width: 100%;
-    height: 44px;
-    background-color: rgba(248, 248, 248, 0.9); /* Light Mode with slight transparency */
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: rgba(248, 248, 248, 0.95); /* Light Mode with slight transparency */
     backdrop-filter: blur(10px); /* Frosted glass effect */
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-image {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100px;
+    width: 50px;
     height: 100%;
+    margin: 0;
 }
 
 .navbar-image img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    object-fit: contain;
+    cursor: pointer;
+    padding: 0 5px;
+}
 
+.navbar-image img:hover {
+    background-color: rgba(0, 0, 0, 0.1)
+ }
+
+ .date-time {
+    color: black;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 15px;
+}
+
+.date-time:hover {
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+#time {
+    margin-left: 2px;
+}
+
+#date {
+    margin-right: 2px;
 }
 
 .hero-section {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+.desktop {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr); /* Creates 5 equal columns */
+    gap: 20px; /* Adds space between icons */
+    padding: 50px;
+    justify-items: center; /* Centers icons horizontally in their grid cells */
+    grid-template-rows: auto; /* Auto height for each row based on content */
+}
+
+.app-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100px; /* Fixed width for icons */
+    height: 100px; /* Fixed height for icons */
+    text-align: center;
+    cursor: default;
+}
+
+.app-icon:hover {
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+.app-icon img {
+    width: 50px; /* Size of the application icon */
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 8px; /* Space between icon and label */
+    -webkit-filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, .5));
+}
+
+.app-icon span {
+    font-size: 12px;
+    color: #ffffff;
 }
 
 .dock {
@@ -55,6 +138,7 @@ body {
 .dock img {
     width: 50px;
     height: 50px;
+    object-fit: contain;
     margin: 0 10px;
     cursor: pointer;
 }
