@@ -45,7 +45,7 @@ body {
 }
 
 .navbar-image img {
-    width: 30px;
+    height: 35px;
     object-fit: contain;
     cursor: pointer;
     padding: 0 5px;
@@ -55,8 +55,46 @@ body {
     background-color: rgba(0, 0, 0, 0.1)
  }
 
+ .navbar-application {
+    color: black;
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    cursor: default;
+ }
+
+ .navbar-application span {
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.navbar-application span:hover {
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+ .navbar-application ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    cursor: default;
+ }
+
+ .navbar-application li {
+    cursor: default;
+    padding: 5px 15px;
+    border-radius: 5px;
+ }
+
+ .navbar-application li:hover {
+    background-color: rgba(0, 0, 0, 0.1)
+ }
+
  .date-time {
     color: black;
+    width: 100%;
     font-size: 12px;
     display: flex;
     align-items: center;
