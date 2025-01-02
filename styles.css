@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    background-image: url('hero.jpg');
+}
+
+.navbar {
+    width: 100%;
+    height: 44px;
+    background-color: rgba(248, 248, 248, 0.9); /* Light Mode with slight transparency */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.dock {
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Light frosted glass */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dock img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    cursor: pointer;
+}
