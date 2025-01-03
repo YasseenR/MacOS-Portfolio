@@ -7,65 +7,73 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class = "landing">
-        <div class = "navbar">  
-            <div class="navbar-image">
-                <img src="images/luffy.png" alt="Navbar Icon">
+    <div>
+        <div id="loading-screen">
+            <dotlottie-player src="https://lottie.host/51436bd4-99bc-40a3-8c56-72ec420549d4/urLXpeSFX3.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" autoplay></dotlottie-player>
+        </div>
+        <div class="landing">
+            <div id="landing-container" class="hidden">
+            <div class = "navbar">  
+                <div class="navbar-image">
+                    <img src="images/luffy.png" alt="Navbar Icon">
+                </div>
+                <div class="navbar-application">
+                    <span>Yasseen Rouni</span>
+                    <ul>
+                        <li>File</li>
+                        <li>Edit</li>
+                        <li>View</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+                <div class="date-time">
+                    <span id="date">Thu Jan 2</span>
+                    <span id="time"> 3:34 am</span>
+                </div>
             </div>
-            <div class="navbar-application">
-                <span>Yasseen Rouni</span>
-                <ul>
-                    <li>File</li>
-                    <li>Edit</li>
-                    <li>View</li>
-                    <li>Help</li>
-                </ul>
-            </div>
-            <div class="date-time">
-                <span id="date">Thu Jan 2</span>
-                <span id="time"> 3:34 am</span>
+            <div class = "hero-section">
+                <div class="desktop">
+                    <div id = "projects" class="app-icon">
+                        <img src="images/folder.png" alt="Projects" class="folder-icon">
+                        <span>Projects</span>
+                    </div>
+                    <div id = "work-experience" class="app-icon">
+                        <img src="images/folder.png" alt="App 3">
+                        <span>Work Experience</span>
+                    </div>
+                    <div id="education" class="app-icon">
+                        <img src="images/folder.png" alt="App 4">
+                        <span>Education</span>
+                    </div>
+                    <div id = "skills" class="app-icon">
+                        <img src="images/folder.png" alt="App 4">
+                        <span>Skills</span>
+                    </div>
+                    <div id = "resume" class="app-icon">
+                        <img src="images/doc.png" alt="App 4">
+                        <span>Resume.pdf</span>
+                    </div>
+                    <div id="email" class="app-icon">
+                        <img src="images/email.png" alt="App 4">
+                        <span>Email</span>
+                    </div>
+                    <div id="github"class="app-icon">
+                        <img src="images/github.png" alt="App 2">
+                        <span>Github</span>
+                    </div>
+                </div>
+                <div class = "dock">
+                    <img src="images/folder.png" alt="App Icon 1">
+                    <img src="images/folder.png" alt="App Icon 2">
+                    <img src="images/folder.png" alt="App Icon 3">
+                    <img src="images/folder.png" alt="App Icon 4">
+                    <img src="images/folder.png" alt="App Icon 5"> 
+                </div>
             </div>
         </div>
-        <div class = "hero-section">
-            <div class="desktop">
-                <div class="app-icon">
-                    <img src="images/folder.png" alt="Projects" class="folder-icon">
-                    <span>Projects</span>
-                </div>
-                <div class="app-icon">
-                    <img src="images/folder.png" alt="App 2">
-                    <span>Github</span>
-                </div>
-                <div class="app-icon">
-                    <img src="images/folder.png" alt="App 3">
-                    <span>Work Experience</span>
-                </div>
-                <div class="app-icon">
-                    <img src="images/doc.png" alt="App 4">
-                    <span>Resume.pdf</span>
-                </div>
-                <div class="app-icon">
-                    <img src="images/folder.png" alt="App 4">
-                    <span>Education</span>
-                </div>
-                <div class="app-icon">
-                    <img src="images/email.png" alt="App 4">
-                    <span>Email</span>
-                </div>
-                <div class="app-icon">
-                    <img src="images/folder.png" alt="App 4">
-                    <span>Skills</span>
-                </div>
-            </div>
-            <div class = "dock">
-                <img src="images/folder.png" alt="App Icon 1">
-                <img src="images/folder.png" alt="App Icon 2">
-                <img src="images/folder.png" alt="App Icon 3">
-                <img src="images/folder.png" alt="App Icon 4">
-                <img src="images/folder.png" alt="App Icon 5"> 
-            </div>
         </div>
     </div>
-    
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </body>
+<script src="main.js"></script>
 </html>
